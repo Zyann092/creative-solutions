@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@500&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav {
+    display: flex;
+    height: 40px;
+    background-color: white;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 5px solid black; */
+}
+.nav-brand {
+    padding: 0 0 0 130px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size:  21px;
+}
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    align-items: center;
+    padding: 0 100px 0 0;
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 0;
+}
+.nav-item a {
+    text-decoration: none;
+    color: purple;
+}
+.hero-section {
+    background-image: url(../activity-img.jpg);
+    height: 500px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-sec-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 130px 0 0 0;
+}
+.creative-sol {
+    font-size: 70px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.hero-text {
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 70px;
+    margin: 0 20px;
+}
+.card {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.circle-image {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(32, 55, 146);
+    border-radius: 100%;
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(75, 75, 225);
+    padding: 0 0 20px 0;
+    text-align: center;
+}
+.card-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+}
+@media only screen and (max-width: 1084px) {
+    .hero-section {
+        height: calc(100vh - 50px);
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .card-content {
+        width: auto;
+        height: auto;
+        font-size: 100%;
+    }
+    .card {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 654px) {
+    .nav {
+        height: auto;
+
+    }
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-brand {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
